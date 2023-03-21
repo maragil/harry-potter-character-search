@@ -1,5 +1,6 @@
 /* SECCIÓN DE IMPORT */
-
+import { useEffect, useState } from 'react';
+import getDataApi from '../services/api';
 // - De React
 // - Nuestros
 // - Sass
@@ -9,15 +10,23 @@ import '../styles/App.scss';
 /* SECCIÓN DEL COMPONENTE */
 function App() {
   /* VARIABLES ESTADO (DATOS) */
+  const [listCharacter, setListCharacter] = useState([]);
 
-  /* EFECTOS (día 5) */
+  /* EFECTOS*/
+  useEffect(() => {
+    getDataApi().then((cleanData) => {
+      setListCharacter(cleanData);
+    });
+  }, []);
 
   /* FUNCIONES HANDLER */
 
   /* FUNCIONES Y VARIABLES AUXILIARES PARA PINTAR EL HTML */
 
   /* HTML */
-  return <div className="App">Hola Harry</div>;
+  return <div>
+    <h1>Buscador de Harry Potter</h1>
+  </div>;
 }
 
 /* PROP-TYPES */
