@@ -50,7 +50,7 @@ function App() {
 
   /* HTML */
   return (
-    <div className='page'>
+    <div>
       <header className='hero' logo={logo}></header>
       <main className='main'>
         <Routes>

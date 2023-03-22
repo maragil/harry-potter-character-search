@@ -1,18 +1,21 @@
+import '../styles/layout/FilterHouse.scss';
+
 function FilterHouse ({handleHouseFilter, houseFilter}){
     const handleChange = (ev) => {
         handleHouseFilter(ev.target.value);
     }
     return (
-        <fieldset>
-            <legend>Filtrar por casa</legend>
+        <>
+            <legend className='filter'>Elije una casa</legend>
                 <select
+                className='filter__input'
                 id="character" onChange={handleChange} value={houseFilter}>
-                    <option value="Gryffindor">Gryffindor</option>
-                    <option value="Hufflepuff">Hufflepuff</option>
-                    <option value="Ravenclaw">Ravenclaw</option>
-                    <option value="Slytherin">Slytherin</option>
+                    <option className='filter__select--option' value="Gryffindor">Gryffindor</option>
+                    <option className='filter__select--option' value="Hufflepuff">Hufflepuff</option>
+                    <option className='filter__select--option' value="Ravenclaw">Ravenclaw</option>
+                    <option className='filter__select--option' value="Slytherin">Slytherin</option>
                 </select>
-        </fieldset>
+        </>
     );
 }
 export default FilterHouse;
