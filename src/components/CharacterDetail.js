@@ -16,7 +16,7 @@ function CharacterDetail ({characterFind}) {
                     <h3 className='detail name'>Nombre</h3>
                     <p className='text'>{characterFind.name}</p>
                     <h3 className='detail house'>Casa</h3>
-                    <p className='text'>{characterFind.house}</p>
+                    <img src={images[characterFind.house]}></img>
                     <h3 className='detail status'>Estado</h3>
                     <p className='text'>{characterFind.alive ? 'Viv@' : 'Muert@' }</p>
                     <h3 className='detail gender'>Género</h3>

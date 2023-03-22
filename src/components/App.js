@@ -4,8 +4,9 @@ import { matchPath, Route, Routes, useLocation } from 'react-router-dom';
 import getDataApi from '../services/api';
 import CharacterList from './CharacterList';
 import Filters from './Filters';
-import '../styles/App.scss';
 import CharacterDetail from './CharacterDetail';
+import logo from '../../src/images/logo.png';
+import '../styles/App.scss';
 
 /* SECCIÓN DEL COMPONENTE */
 function App() {
@@ -50,13 +51,12 @@ function App() {
   /* HTML */
   return (
     <div className='page'>
-      <header className='img'></header>
+      <header className='hero' logo={logo}></header>
       <main className='main'>
         <Routes>
           <Route path='/'
                   element={
                     <>
-                      <h1>Buscador de Harry Potter</h1>
                       <Filters handleNameFilter={handleNameFilter} nameFilter={nameFilter} handleHouseFilter={handleHouseFilter} houseFilter={houseFilter}></Filters>
                       <CharacterList listCharacter={characterFiltered} nameFilter={nameFilter}></CharacterList>
                     </>}>

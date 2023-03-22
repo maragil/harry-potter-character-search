@@ -1,7 +1,16 @@
-/* Aquí van tus estilos */
+@import 'core/reset.scss';
+@import 'layout/CharacterCard.scss';
+@import 'layout/CharacterDetail.scss';
+@import 'layout/CharacterList.scss';
+@import 'layout/Error.scss';
+@import 'layout/FilterHouse.scss';
+@import 'layout/FilterName.scss';
+@import 'layout/Filters.scss';
+@import 'layout/Header.scss';
 
 .body{
     background-color: #19191a;
+    background-image: url('../images/fondo.jpg');
 }
 .card{
     width: 175px;
@@ -21,20 +30,15 @@
 
 .list{
     margin: 20px;
-    background-color: #dda90d;
-    background-color: #bb8b06;
+    // background-color: #dda90d;
+    // background-color: #bb8b06;
 }
 
 .link{
     text-decoration: none;
 }
 
-// .img{
-//     background-image: url('../../src/images/hero-negro.jpg');
-//     width: 100vw;
-//     height: 40vh;
-//     background-size: cover;
-// }
+
 
 .main{
     height: 80vh;
