@@ -1,9 +1,11 @@
 /* SECCIÓN DE IMPORT */
 import { useEffect, useState } from 'react';
+import { matchPath, Route, Routes, useLocation } from 'react-router-dom';
 import getDataApi from '../services/api';
 import CharacterList from './CharacterList';
 import Filters from './Filters';
 import '../styles/App.scss';
+import CharacterDetail from './CharacterDetail';
 
 
 /* SECCIÓN DEL COMPONENTE */
@@ -33,16 +35,33 @@ function App() {
   const characterFiltered = listCharacter
     .filter((eachCharacter) => eachCharacter.name.toLocaleLowerCase().includes(nameFilter.toLocaleLowerCase()))
 
+  const {pathname} = useLocation();
+  const dataUrl = matchPath('/character/:id', pathname);
+
+  const characterId = dataUrl !== null ? dataUrl.params.id : null
+
+  const characterFind = characterFiltered.find((eachCharacter) => eachCharacter.id === characterId)
+
   /* HTML */
   return (
-    <div>
-      <h1>Buscador de Harry Potter</h1>
-      <main>
-        <Filters handleNameFilter={handleNameFilter} handleHouseFilter={handleHouseFilter}></Filters>
-        <CharacterList listCharacter={characterFiltered}></CharacterList>
+    <div className='page dark'>
+      <header className='img'></header>
+      <main className='main'>
+        <Routes>
+          <Route path='/'
+                  element={
+                    <>
+                      <h1>Buscador de Harry Potter</h1>
+                      <Filters handleNameFilter={handleNameFilter} handleHouseFilter={handleHouseFilter}></Filters>
+                      <CharacterList listCharacter={characterFiltered}></CharacterList>
+                    </>}>
+          </Route>
+          <Route path='/character/:id' element={<CharacterDetail characterFind={characterFind}/>} />
+
+        </Routes>
       </main>
     </div>
-    );
+  );
 }
 
 /* PROP-TYPES */

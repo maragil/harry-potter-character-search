@@ -4,19 +4,57 @@
     width: 175px;
     height: 175px;
     border-radius: 5%;
-    }
-    
-    .ul{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        list-style: none;
-    }
+    border: none;
+    background-color: transparent;
+    margin:auto;
+    padding-top: 10px;
+}
 
-    .list{
-        margin-bottom: 20px;
-        
-    }
+.ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
 
-    .link{
-        text-decoration: none;
+.list{
+    margin: 20px;
+    background-color: #dda90d;
+    background-color: #bb8b06;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.img{
+    background-image: url('../../src/images/hero-negro.jpg');
+    width: 100vw;
+    height: 40vh;
+    background-size: cover;
+}
+
+.main{
+    height: 80vh;
+    width: 100vw;
+}
+
+.detail{
+    &__page{
+    width: 175px;
+    height: 175px;
+    border-radius: 5%;
+    border: none;
+    background-color: transparent;
+    margin:auto;
+    padding-top: 10px;
     }
+    // &__img{
+
+    // }
+}
+    // .page.dark{
+    //     background-color: black;
+    //     color: white
+
+
+    // }

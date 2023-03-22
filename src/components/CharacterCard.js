@@ -1,18 +1,18 @@
 import images from './Images.js'
+import { Link } from 'react-router-dom';
 
 function CharacterCard ({eachCharacter}){
-    console.log(eachCharacter.house)
 
     return(
         <li className="list">
-            <a href="." className="link">
+            <Link to={`/character/${eachCharacter.id}`} className="link">
                 <img className="card"
                 src={eachCharacter.image !== '' ? eachCharacter.image : images[eachCharacter.house]}
                 alt={`Imagen de ${eachCharacter.name}`}
                 title={`Imagen de ${eachCharacter.name}`}/>
                 <h3>{eachCharacter.name}</h3>
                 <p>{eachCharacter.specie}</p>
-            </a>
+            </Link>
         </li>
     )
 }
