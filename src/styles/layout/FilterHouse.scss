@@ -1,12 +1,13 @@
 .filter{
-    color: #bb8b06
-}
-
-.filter__input{
+    color: #bb8b06;
+    font-family: 'Farsan', cursive;
+    &__input{
         background-color: #b6b7c1;
-        color: #bb8b06
+        color: #bb8b06;
+        font-family: 'Farsan', cursive;
 }
-
-.filter__select--option{
-    color: #bb8b06
+    &__select--option{
+        color: #bb8b06;
+        font-family: 'Farsan', cursive;
+}
 }

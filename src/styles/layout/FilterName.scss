@@ -1,12 +1,10 @@
 .filter{
-    color: #bb8b06
-}
-
-.filter__input{
+    color: #bb8b06;
+    &__input{
         background-color: #b6b7c1;
     }
-
+}
 
 ::placeholder{
-    color: #bb8b06
+    color: #bb8b06;
 }

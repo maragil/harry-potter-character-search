@@ -12,35 +12,12 @@
     background-color: #19191a;
     background-image: url('../images/fondo.jpg');
 }
-.card{
-    width: 175px;
-    height: 175px;
-    border-radius: 5%;
-    border: none;
-    background-color: transparent;
-}
-
-// .ul{
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr 1fr;
-//     list-style: none;
-// }
-
-.list{
-    margin: 20px;
-    // background-color: #dda90d;
-    // background-color: #bb8b06;
-}
-
-.link{
-    text-decoration: none;
-}
-
 
 
 .main{
     height: 80vh;
     width: 100vw;
+    ;
 }
 
 .detail__page{
@@ -62,11 +39,5 @@
 
 
 .text{
-    text-transform: capitalize;
+    
 }
-    // .page.dark{
-    //     background-color: black;
-    //     color: white
-
-
-    // }

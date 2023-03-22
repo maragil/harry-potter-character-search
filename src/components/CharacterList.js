@@ -1,5 +1,6 @@
 import CharacterCard from "./CharacterCard";
 import Error from "./Error";
+import '../styles/layout/CharacterList.scss';
 
 function CharacterList ({listCharacter, nameFilter}) {
     if(listCharacter.length === 0 && nameFilter){
@@ -10,7 +11,7 @@ function CharacterList ({listCharacter, nameFilter}) {
     });
     return (
         <section>
-            <ul className="ul">
+            <ul className="character-list">
                 {dataHtml}
             </ul>
         </section>
