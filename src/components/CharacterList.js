@@ -1,6 +1,10 @@
 import CharacterCard from "./CharacterCard";
+import Error from "./Error";
 
-function CharacterList ({listCharacter}) {
+function CharacterList ({listCharacter, nameFilter}) {
+    if(listCharacter.length === 0 && nameFilter){
+        return <Error nameFilter={nameFilter}/>
+    };
     const dataHtml = listCharacter.map((eachCharacter) => {
         return <CharacterCard eachCharacter={eachCharacter} key={eachCharacter.id}/>;
     });

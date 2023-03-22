@@ -1,4 +1,4 @@
-function FilterHouse ({handleHouseFilter}){
+function FilterHouse ({handleHouseFilter, houseFilter}){
     const handleChange = (ev) => {
         handleHouseFilter(ev.target.value);
     }
@@ -6,7 +6,7 @@ function FilterHouse ({handleHouseFilter}){
         <fieldset>
             <legend>Filtrar por casa</legend>
                 <select
-                id="character" onChange={handleChange}>
+                id="character" onChange={handleChange} value={houseFilter}>
                     <option value="Gryffindor">Gryffindor</option>
                     <option value="Hufflepuff">Hufflepuff</option>
                     <option value="Ravenclaw">Ravenclaw</option>

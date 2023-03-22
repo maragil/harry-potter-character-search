@@ -7,9 +7,9 @@ import Filters from './Filters';
 import '../styles/App.scss';
 import CharacterDetail from './CharacterDetail';
 
-
 /* SECCIÓN DEL COMPONENTE */
 function App() {
+
   /* VARIABLES ESTADO (DATOS) */
   const [listCharacter, setListCharacter] = useState([]);
   const [nameFilter, setNameFilter] = useState('');
@@ -17,6 +17,7 @@ function App() {
 
   /* EFECTOS*/
   useEffect(() => {
+    // let test=houseFilter;
     getDataApi(houseFilter).then((cleanData) => {
       setListCharacter(cleanData);
     });
@@ -34,6 +35,9 @@ function App() {
   /* FUNCIONES Y VARIABLES AUXILIARES PARA PINTAR EL HTML */
   const characterFiltered = listCharacter
     .filter((eachCharacter) => eachCharacter.name.toLocaleLowerCase().includes(nameFilter.toLocaleLowerCase()))
+    .filter((eachCharacter) => {
+      return eachCharacter.house === houseFilter
+    } )
 
   const {pathname} = useLocation();
   const dataUrl = matchPath('/character/:id', pathname);
@@ -42,9 +46,10 @@ function App() {
 
   const characterFind = characterFiltered.find((eachCharacter) => eachCharacter.id === characterId)
 
+
   /* HTML */
   return (
-    <div className='page dark'>
+    <div className='page'>
       <header className='img'></header>
       <main className='main'>
         <Routes>
@@ -52,8 +57,8 @@ function App() {
                   element={
                     <>
                       <h1>Buscador de Harry Potter</h1>
-                      <Filters handleNameFilter={handleNameFilter} handleHouseFilter={handleHouseFilter}></Filters>
-                      <CharacterList listCharacter={characterFiltered}></CharacterList>
+                      <Filters handleNameFilter={handleNameFilter} nameFilter={nameFilter} handleHouseFilter={handleHouseFilter} houseFilter={houseFilter}></Filters>
+                      <CharacterList listCharacter={characterFiltered} nameFilter={nameFilter}></CharacterList>
                     </>}>
           </Route>
           <Route path='/character/:id' element={<CharacterDetail characterFind={characterFind}/>} />

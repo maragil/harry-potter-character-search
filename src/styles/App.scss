@@ -1,5 +1,8 @@
 /* Aquí van tus estilos */
 
+.body{
+    background-color: #19191a;
+}
 .card{
     width: 175px;
     height: 175px;
@@ -26,31 +29,38 @@
     text-decoration: none;
 }
 
-.img{
-    background-image: url('../../src/images/hero-negro.jpg');
-    width: 100vw;
-    height: 40vh;
-    background-size: cover;
-}
+// .img{
+//     background-image: url('../../src/images/hero-negro.jpg');
+//     width: 100vw;
+//     height: 40vh;
+//     background-size: cover;
+// }
 
 .main{
     height: 80vh;
     width: 100vw;
 }
 
-.detail{
-    &__page{
-    width: 175px;
-    height: 175px;
-    border-radius: 5%;
-    border: none;
-    background-color: transparent;
-    margin:auto;
-    padding-top: 10px;
-    }
-    // &__img{
+.detail__page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
 
-    // }
+.detail__img{
+        width: 175px;
+        height: 175px;
+        border-radius: 5%;
+        border: none;
+        background-color: transparent;
+        margin:auto;
+        padding-top: 10px;
+
+    }
+
+
+.text{
+    text-transform: capitalize;
 }
     // .page.dark{
     //     background-color: black;

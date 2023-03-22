@@ -11,7 +11,7 @@ function CharacterCard ({eachCharacter}){
                 alt={`Imagen de ${eachCharacter.name}`}
                 title={`Imagen de ${eachCharacter.name}`}/>
                 <h3>{eachCharacter.name}</h3>
-                <p>{eachCharacter.specie}</p>
+                <p className='text'>{eachCharacter.specie}</p>
             </Link>
         </li>
     )
