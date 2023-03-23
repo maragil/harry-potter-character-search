@@ -19,17 +19,17 @@
         height: 38vh;
         }
             &--img{
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
             }
             &--div{
-            width: 200px;
-            height: 200px;
-            overflow: hidden;
-            @media all and (min-width: 768px){
-                margin-left: 20px;
-                margin-top: 20px;
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                @media all and (min-width: 768px){
+                    margin-left: 20px;
+                    margin-top: 20px;
             }
             }
     }

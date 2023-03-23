@@ -2,10 +2,10 @@
     display: flex;
     justify-content: center;
     &__link{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
     }
     &__card{
         width: 100px;

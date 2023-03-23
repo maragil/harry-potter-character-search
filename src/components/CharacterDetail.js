@@ -26,7 +26,7 @@ function CharacterDetail ({characterFind}) {
                 <article className="detail__card--desc">
 
                         <h3 className='detail__desc'>Casa:</h3>
-                        <img className="detail__desc--shield" src={images[characterFind.house]}></img>
+                        <img className="detail__desc--shield" alt='Escudo de la casa' src={images[characterFind.house]}></img>
 
                         <h3 className='detail__desc'>Estado:</h3>
                         <p className='detail__desc--text'>{characterFind.alive ? '🤍' : '💀' }</p>

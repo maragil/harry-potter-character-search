@@ -10,8 +10,8 @@ Desarrollar una página web con un listado de personajes de Harry Potter, en la 
 
 **1. Listado de personajes:**
 
-Realizar una web con el listado de personajes de Harry Potter utilizando el servicio de https://hp-api.onrender.com/ que nos devuelve información sobre los personajes de Harry Potter ﬁltrados por la casa a la que pertenecen.
-Sobre cada uno, vamos a pintar al menos: Foto, nombre, especie.
+Realizar una web con el listado de personajes de Harry Potter utilizando el servicio de https://hp-api.onrender.com/, que nos devuelve información sobre los personajes de Harry Potter ﬁltrados por la casa a la que pertenecen.
+Sobre cada uno, vamos a pintar al menos: foto, nombre, especie.
 
 **2. Filtrado de personajes:**
 
@@ -19,7 +19,7 @@ Después de tener el listado de personajes hay que hacer un filtro para buscarlo
 
 **3. Filtrado por casa:**
 
-Después del filtro por nombre, la siguiente parte es poder buscarlo por casa, de forma que al seleccionar una casa queden en la interfaz solo los personajes cuya casa es la seleccionada. Por defecto al cargar la página tienen que aparecer la casa Gryffindor.
+Después del filtro por nombre, la siguiente parte es poder buscarlo por casa, de forma que al seleccionar una casa queden en la interfaz solo los personajes cuya casa es la seleccionada. Por defecto al cargar la página tiene que aparecer la casa Gryffindor.
 
 **4. Componentes del listado de personajes:**
 
@@ -32,59 +32,44 @@ El listado debe tener los siguientes componentes como mínimo:
 
 **5. Detalle de los personajes:**
 
-Al hacer clic sobre la tarjeta de un personaje, su
-información aparecerá a pantalla completa. En la pantalla de detalle aparecerá además de la foto, nombre del personaje, la casa a la que pertenece , si está vivo o muerto, género, especie y los nombres
-alternativos en caso de que los tenga.
+Al hacer click sobre la tarjeta de un personaje, la información aparecerá a pantalla completa. En la pantalla de detalle aparecerá además de la foto, nombre del personaje, la casa a la que pertenece , si está vivo o muerto, género, especie y los nombres alternativos en caso de que los tenga.
 
 **6. Bonus:**
 
-Como bonus se pueden hacer mejoras visuales asignando iconos y emblemas, contemplar que la URL del detalle del personaje sea compatible
+Como bonus se pueden implementar: mejoras visuales asignando iconos y emblemas; contemplar que si se visita la URL directamente en el navegador se vea el detalle del personaje; ordenar el listado de personajes alfabéticamente; aplicar más filtros; instalar un botón de reset.
 
 ## :bookmark_tabs: Criterios de evaluación.
 
-#### General:
+Hay que haber superado al menos el 80% de los criterios(los marcados con \* se consideran claves).
 
-- Usar una estructura adecuada de ficheros y carpetas para un proyecto web, y enlazar bien los distintos ficheros.
+#### React básico:
 
-- Tener el código perfectamente indentado.
+- Crea componentes con sintaxis correcta\*.
+- Crea una estructura adecuada de componentes\*.
+- Usa las props para pasar datos a componentes hijos\*.
+- Sabe pintar listados\*.
+- Sabe usar métodos funcionales de array (map, filter, etc.)\*.
+- Usa el estado para gestionar información de la interfaz\*.
+- El componente principal App.js maneja el estado de la aplicación\*.
+- Usa eventos en React para atender a interacciones del usuaria\*.
+- Hooks para las peticiones al servidor.
+- Escribe un código sólido, sin errores en la consola\*.
+- Usa defaultProps en los componentes.
+- Usa propTypes para evitar errores de tipado.
 
-- Uso de control de versiones con ramas para manejar un proyecto de código.
+#### React router:
 
-#### JavaScript básico:
-
-- Crear código JavaScript con sintaxis correcta y bien estructurado.
-
-- Usar constantes / variables para almacenar información y re-asignar valores.
-
-- Usar condicionales para ejecutar acciones distintas en función de una condición.
-
-- Saber trabajar con listados de datos (arrays).
-
-- Usar funciones para estructurar el código.
-
-- Saber modificar la información del DOM para añadir contenido dinámico.
-
-- Saber escuchar eventos del DOM y actuar en consecuencia.
-
-#### Peticiones AJAX y APIs:
-
-- Crear peticiones con fetch y promesas.
-
-- Saber trabajar correctamente con la respuesta del servidor.
-
-- Gestionar información en formato JSON.
-
-- Usar el localStorage para guardar información en el navegador.
+- Crear rutas navegables dentro de una aplicación.
 
 #### Issues:
 
 - Haber resuelto las issues de la evaluación intermedia.
 
-## Herramientas. :hammer_and_wrench:
+## :hammer_and_wrench: Herramientas.
 
 - HTML
 - Scss
-- JavaScript
-- AWSK
+- ReactJS
+- React Starter Kit
 - GitHub
 - GitHub Pages
