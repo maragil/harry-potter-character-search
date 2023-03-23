@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "./static/css/main.c78b7fdd.css",
+    "main.js": "./static/js/main.ed260116.js",
+    "static/media/fondo.jpg": "./static/media/fondo.c4c08046cc3b6bcde7f7.jpg",
+    "static/media/Ravenclaw.png": "./static/media/Ravenclaw.9610bcde136dbfa89da6.png",
+    "static/media/Gryffindor.png": "./static/media/Gryffindor.f400fa2353141c647558.png",
+    "static/media/Hufflepuff.png": "./static/media/Hufflepuff.f6d11a5457195a54f900.png",
+    "static/media/Slytherin.png": "./static/media/Slytherin.2f1ae1364423a77ea790.png",
+    "static/media/logo.png": "./static/media/logo.2b22b60884a37afe82e4.png",
+    "index.html": "./index.html",
+    "main.c78b7fdd.css.map": "./static/css/main.c78b7fdd.css.map",
+    "main.ed260116.js.map": "./static/js/main.ed260116.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c78b7fdd.css",
+    "static/js/main.ed260116.js"
+  ]
+}
