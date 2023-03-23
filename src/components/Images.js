@@ -3,9 +3,11 @@ import Hufflepuff from '../../src/images/Hufflepuff.png';
 import Ravenclaw from '../../src/images/Ravenclaw.png';
 import Slytherin from '../../src/images/Slytherin.png';
 
-export default {
+const Images = {
     Gryffindor,
     Hufflepuff,
     Slytherin,
     Ravenclaw,
 };
+
+export default Images;

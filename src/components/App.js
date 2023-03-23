@@ -33,6 +33,11 @@ function App() {
     setHouseFilter(value);
   };
 
+  const handleReset = () => {
+    setNameFilter('');
+    setHouseFilter('Gryffindor');
+  }
+
   /* FUNCIONES Y VARIABLES AUXILIARES PARA PINTAR EL HTML */
   const characterFiltered = listCharacter
     .filter((eachCharacter) => eachCharacter.name.toLocaleLowerCase().includes(nameFilter.toLocaleLowerCase()))
@@ -57,7 +62,7 @@ function App() {
           <Route path='/'
                   element={
                     <>
-                      <Filters handleNameFilter={handleNameFilter} nameFilter={nameFilter} handleHouseFilter={handleHouseFilter} houseFilter={houseFilter}></Filters>
+                      <Filters handleNameFilter={handleNameFilter} nameFilter={nameFilter} handleHouseFilter={handleHouseFilter} houseFilter={houseFilter} handleReset={handleReset}></Filters>
                       <CharacterList listCharacter={characterFiltered} nameFilter={nameFilter}></CharacterList>
                     </>}>
           </Route>

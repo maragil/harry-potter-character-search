@@ -18,7 +18,7 @@ function CharacterDetail ({characterFind}) {
                             alt= {`Imagen de ${characterFind.name}`}
                             title= {`Imagen de ${characterFind.name}`}/>
                     </div>
-                    <div>
+                    <div className="detail__name">
                         <h3 className='detail__desc'>Nombre: </h3>
                         <p className='detail__desc--text'>{characterFind.name}</p>
                     </div>
@@ -40,7 +40,7 @@ function CharacterDetail ({characterFind}) {
                         <h3 className='detail__desc'>Especie:</h3>
                         <p className='detail__desc--text'>{characterFind.specie}</p>
 
-                        <h3 className='detail__desc'>Nombres alternativos:</h3>
+                        <h3 className='detail__desc'>{characterFind.alternatename.length ? 'Nombres alternativos:' : ''}</h3>
                         <p className='detail__desc--text'>{characterFind.alternatename}</p>
                     </article>
                 </section>
