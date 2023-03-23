@@ -7,10 +7,12 @@ function CharacterCard ({eachCharacter}){
     return(
         <li className="list">
             <Link to={`/character/${eachCharacter.id}`} className="list__link">
+                <div>
                 <img className="list__card"
                 src={eachCharacter.image !== '' ? eachCharacter.image : images[eachCharacter.house]}
                 alt={`Imagen de ${eachCharacter.name}`}
                 title={`Imagen de ${eachCharacter.name}`}/>
+                </div>
                 <h3 className='list__card--name'>{eachCharacter.name}</h3>
                 <p className='list__card--text'>{eachCharacter.specie}</p>
             </Link>

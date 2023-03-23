@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+![Logo Harry Potter](/src/images/logo.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Evalución final módulo 3. María Araujo Gil.
 
-## Available Scripts
+## :book: Descripción del proyecto.
 
-In the project directory, you can run:
+Desarrollar una página web con un listado de personajes de Harry Potter, en la que podamos ﬁltrar por el nombre del personaje y la casa a la que pertenece.
 
-### `npm start`
+## :heavy_check_mark: Requerimientos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**1. Listado de personajes:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Realizar una web con el listado de personajes de Harry Potter utilizando el servicio de https://hp-api.onrender.com/ que nos devuelve información sobre los personajes de Harry Potter ﬁltrados por la casa a la que pertenecen.
+Sobre cada uno, vamos a pintar al menos: Foto, nombre, especie.
 
-### `npm test`
+**2. Filtrado de personajes:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Después de tener el listado de personajes hay que hacer un filtro para buscarlos por nombre, quedando en la interfaz solo los personajes cuyo nombre contiene las letras escritas.
 
-### `npm run build`
+**3. Filtrado por casa:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Después del filtro por nombre, la siguiente parte es poder buscarlo por casa, de forma que al seleccionar una casa queden en la interfaz solo los personajes cuya casa es la seleccionada. Por defecto al cargar la página tienen que aparecer la casa Gryffindor.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**4. Componentes del listado de personajes:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+El listado debe tener los siguientes componentes como mínimo:
 
-### `npm run eject`
+- Componente para el ﬁltro de nombre.
+- Componente para el listado.
+- Componente para la tarjeta de cada personaje del listado.
+- Componente para el detalle de cada personaje.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**5. Detalle de los personajes:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Al hacer clic sobre la tarjeta de un personaje, su
+información aparecerá a pantalla completa. En la pantalla de detalle aparecerá además de la foto, nombre del personaje, la casa a la que pertenece , si está vivo o muerto, género, especie y los nombres
+alternativos en caso de que los tenga.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**6. Bonus:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Como bonus se pueden hacer mejoras visuales asignando iconos y emblemas, contemplar que la URL del detalle del personaje sea compatible
 
-## Learn More
+## :bookmark_tabs: Criterios de evaluación.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### General:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Usar una estructura adecuada de ficheros y carpetas para un proyecto web, y enlazar bien los distintos ficheros.
 
-### Code Splitting
+- Tener el código perfectamente indentado.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Uso de control de versiones con ramas para manejar un proyecto de código.
 
-### Analyzing the Bundle Size
+#### JavaScript básico:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Crear código JavaScript con sintaxis correcta y bien estructurado.
 
-### Making a Progressive Web App
+- Usar constantes / variables para almacenar información y re-asignar valores.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Usar condicionales para ejecutar acciones distintas en función de una condición.
 
-### Advanced Configuration
+- Saber trabajar con listados de datos (arrays).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Usar funciones para estructurar el código.
 
-### Deployment
+- Saber modificar la información del DOM para añadir contenido dinámico.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Saber escuchar eventos del DOM y actuar en consecuencia.
 
-### `npm run build` fails to minify
+#### Peticiones AJAX y APIs:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Crear peticiones con fetch y promesas.
+
+- Saber trabajar correctamente con la respuesta del servidor.
+
+- Gestionar información en formato JSON.
+
+- Usar el localStorage para guardar información en el navegador.
+
+#### Issues:
+
+- Haber resuelto las issues de la evaluación intermedia.
+
+## Herramientas. :hammer_and_wrench:
+
+- HTML
+- Scss
+- JavaScript
+- AWSK
+- GitHub
+- GitHub Pages

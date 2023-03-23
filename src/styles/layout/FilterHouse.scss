@@ -1,13 +1,22 @@
 .filter{
     color: #bb8b06;
     font-family: 'Farsan', cursive;
+    @media all and (min-width: 768px){
+        font-size: 30px;
+    }
     &__input{
         background-color: #b6b7c1;
         color: #bb8b06;
         font-family: 'Farsan', cursive;
+        @media all and (min-width: 768px){
+            font-size: 23px;
+        }
 }
     &__select--option{
         color: #bb8b06;
         font-family: 'Farsan', cursive;
+        @media all and (min-width: 768px){
+            font-size: 23px;
+        }
 }
 }

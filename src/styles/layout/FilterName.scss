@@ -2,9 +2,14 @@
     color: #bb8b06;
     &__input{
         background-color: #b6b7c1;
+        padding-left: 5px;
+        @media all and (min-width: 768px){
+            font-size: 30px;
+        }
     }
 }
 
 ::placeholder{
     color: #bb8b06;
+    padding-left: 5px;
 }

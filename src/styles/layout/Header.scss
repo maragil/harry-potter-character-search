@@ -3,4 +3,9 @@
     width: auto;
     height: 20vh;
     background-size: cover;
+    background-position: center;
+
+    @media all and (min-width: 768px){
+        height: 27vh;
+    }
 }
