@@ -8,4 +8,4 @@ export default {
     Hufflepuff,
     Slytherin,
     Ravenclaw,
-}
+};

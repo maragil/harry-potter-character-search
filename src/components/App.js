@@ -62,7 +62,6 @@ function App() {
                     </>}>
           </Route>
           <Route path='/character/:id' element={<CharacterDetail characterFind={characterFind}/>} />
-
         </Routes>
       </main>
     </div>

@@ -24,7 +24,7 @@
                 align-items: center;
             }
             &--div{
-                width: 200px;
+                width: 150px;
                 height: 200px;
                 overflow: hidden;
                 @media all and (min-width: 768px){
@@ -93,5 +93,26 @@
     @media all and (min-width: 768px){
         font-size: 30px;
         padding: 20px 0 0 40px;
+    }
+}
+
+.character__undefined{
+    text-align: center;
+    margin: 20px;
+    &--p{
+    font-family: 'Farsan', cursive;
+    color: #bb8b06;
+    font-size: 30px;
+    @media all and (min-width: 768px){
+        font-size: 40px;
+    }
+}
+    &--link{
+        color: #bb8b06;
+        font-family: 'Farsan', cursive;
+        font-size: 30px;
+        @media all and (min-width: 768px){
+            font-size: 40px;
+        }
     }
 }

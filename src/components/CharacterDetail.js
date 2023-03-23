@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import images from './Images.js'
+import images from './Images.js';
 import '../styles/layout/CharacterDetail.scss';
 
 function CharacterDetail ({characterFind}) {
+    if (characterFind !== undefined){
     return(
         <>
             <h2 className='detail'>Detalles del personaje</h2>
@@ -47,6 +48,13 @@ function CharacterDetail ({characterFind}) {
             <Link className='back__link'to='/'>Volver</Link>
             </div>
         </>
-    );
+    );} else {
+        return(
+            <section className="character__undefined">
+            <p className="character__undefined--p">El personaje que estás buscando no existe</p>
+            <Link className='character__undefined--link'to='/'>Volver</Link>
+        </section>
+        )
+    }
 }
 export default CharacterDetail;
