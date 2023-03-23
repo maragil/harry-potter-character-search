@@ -1,5 +1,9 @@
 .filter{
     color: #bb8b06;
+    font-size: 25px;
+    @media all and (min-width: 768px){
+        font-size: 35px;
+    }
     &__input{
         background-color: #b6b7c1;
         padding-left: 5px;

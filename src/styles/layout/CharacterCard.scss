@@ -12,11 +12,18 @@
         height: 115px;
         border: none;
         background-color: transparent;
+        @media all and (min-width:1200px){
+            width: 200px;
+            height: 250px;
+        }
         &--name{
             font-size: 25px;
             color: #bb8b06;
             text-align: center;
             font-family: 'Farsan', cursive;
+            @media all and (min-width: 768px){
+                font-size: 30px;
+            }
         }
         &--text {
             font-size: 22px;
@@ -25,6 +32,9 @@
             text-transform: capitalize;
             text-align: center;
             font-family: 'Farsan', cursive;
+            @media all and (min-width: 768px){
+                font-size: 27px;
+            }
         }
     }
 }

@@ -7,5 +7,13 @@
 
     @media all and (min-width: 768px){
         height: 27vh;
+        max-width: 750px;
+        margin: auto;
+    }
+    @media all and (min-width:1200px){
+        height: 40vh;
+        width: 66vw;
+        margin: 20px auto;
+        max-width: 1521px;
     }
 }
