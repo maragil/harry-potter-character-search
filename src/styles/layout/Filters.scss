@@ -5,4 +5,14 @@
     @media all and (min-width: 768px){
         gap: 10px;
     }
+    &__reset{
+        margin-top: 15px;
+        width: 83px;
+        height: 34px;
+        background-color: #b6b7c1;
+        color: #bb8b06;
+        font-family: 'Farsan', cursive;
+        font-weight: bold;
+        font-size: 33px;
+    }
 }

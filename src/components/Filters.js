@@ -10,8 +10,8 @@ function Filters ({handleNameFilter, handleHouseFilter, houseFilter,handleReset,
     <section>
             <form className="form"
             onSubmit={handleSubmit}>
-            <FilterName handleNameFilter={handleNameFilter} nameFilter={nameFilter}></FilterName>
-            <FilterHouse handleHouseFilter={handleHouseFilter} houseFilter={houseFilter}></FilterHouse>
+            <FilterName handleNameFilter={handleNameFilter} nameFilter={nameFilter} className='form__name'></FilterName>
+            <FilterHouse handleHouseFilter={handleHouseFilter} houseFilter={houseFilter} className='form__house'></FilterHouse>
             <input className="form__reset" type='button' value='Reset'onClick={handleReset}></input>
             </form>
         </section>
